@@ -1,3 +1,4 @@
+import java.util.Locale;
 import java.util.Scanner;
 
 
@@ -5,22 +6,28 @@ import java.util.Scanner;
 public class Main {
 
 	public static void main (String[] args) {
-		System.out.println("Digite um numero?");
+	/*System.out.println("Digite um numero?");
 		Scanner sc = new Scanner(System.in);
 		
 		int x;
 		
-		x = sc.nextInt();
-		System.out.println("Digite o segundo número");
+		x = sc.nextInt();*/
+		Locale.setDefault(Locale.US);
+		System.out.println("Digite o raio");
 		Scanner se = new Scanner(System.in);
-		int y;
+		double r;
 		
-		y = se.nextInt();
+		r = se.nextDouble();
 		
-		int s;
-		s= x+y;
+		double s;
+		s= Math.pow(r, 2);
 		
-		System.out.println("A soma dos dois numeros sao"  + s);
+		double p = 3.14159 * s;
+		
+		
+		
+		
+		System.out.println(" O valo da área"  + p);
 		
 	}
 		
